@@ -1,53 +1,30 @@
-import React, { useState } from "react";
-import { RiCloseLine, RiMenu2Line } from "@remixicon/react";
-const Navbar = () => {
-  const [menu, openMenu] = useState(false);
-  const [showMenu, setShowmenu] = useState(true);
-  return (
-    <nav className="flex flex-wrap justify-between md:items-center text-white px-10 pt-6 md:px-20">
-      <span className="text-xl font-bold tracking-wide">Portfolio</span>
 
-      <ul
-        className={`${
-          menu ? "block" : "hidden"
-        }     mx-24 p-y2 mt-4 font-semibold md:mt-5 bg-black px-2 rounded-xl bg-opacity-30 md:border-none text-center md:bg-transparent md:static md:mx-0 md:flex gap-6`}
-      >
-        <a href="#About">
-          <li className="text-md transition-all duration-300 p-1 md:p-0">
-            About
-          </li>
-        </a>
-        <a href="#Experience">
-          <li className="text-md transition-all duration-300 p-1 md:p-0">
-            Experience
-          </li>
-        </a>
-        <a href="#Projects">
-          <li className="text-md transition-all duration-300 p-1 md:p-0">
-            Projects
-          </li>
-        </a>
-        <a href="#Footer">
-          <li className="text-md transition-all duration-300 p-1 md:p-0">
-            Contact
-          </li>
-        </a>
-      </ul>
-      {showMenu ? (
-        <RiMenu2Line
-          size={30}
-          className="md:hidden absolute right-10 top-6 transition-all duration-300"
-          onClick={() => {
-            openMenu(!menu);
-            setShowmenu(!showMenu);
-          }}
-        />
-      ) : (
-        <RiCloseLine
-          size={30}
-          className="md:hidden absolute right-10 top-6 transition-all duration-300"
-        />
-      )}
+import  { useState } from 'react';
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className=" p-3 bg-gradient-to-r from-indigo-900 to-rose-900">
+      <div className="flex items-center justify-between">
+        <div className="text-white font-bold text-3xl">Portfolio</div>
+        <div className="md:hidden">
+          <button onClick={toggleMenu} className="text-white focus:outline-none">
+            {isOpen ? 'Close' : 'MENU'}
+          </button>
+        </div>
+      </div>
+      <div className={`md:flex ${isOpen ? 'block' : 'hidden'} mt-2`}>
+        <a href="#About" className="block text-slate-400 hover:bg-zinc-400 hover:text-black py-1 px-2 rounded">About</a>
+        <a href="#Skills" className="block text-slate-400 hover:bg-zinc-400 hover:text-black py-1 px-2 rounded">Skills</a>
+        <a href="#Projects" className="block text-slate-400 hover:bg-zinc-400 hover:text-black py-1 px-2 rounded">Projects</a>
+        <a href="#Certificates" className="block text-slate-400 hover:bg-zinc-400 hover:text-black py-1 px-2 rounded">Certificates</a>
+        <a href="#Footer" className="block text-slate-400 hover:bg-zinc-400 hover:text-black py-1 px-2 rounded">Contact</a>
+      </div>
     </nav>
   );
 };
