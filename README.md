@@ -1,6 +1,8 @@
-PORTFOLIO
+**PORTFOLIO**
 _________________________________________________________________________________________________________
-_My personal Portfolio created using HTML ,Tailwind CSS ,Javascript and React._
+_**Technologies** - HTML ,Tailwind CSS ,Javascript and React._
+
+_My personal Portfolio showcasing my education background , skills, projects and certificates._
 _________________________________________________________________________________________________________
 
 ![Screenshot (69)](https://github.com/user-attachments/assets/77bca8b1-c2c1-4498-946c-519f41bb587a)
