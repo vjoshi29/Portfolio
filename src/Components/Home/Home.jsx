@@ -1,4 +1,4 @@
-import resume from "../../assets/VaishaliJoshi_Resume.pdf"
+import resume from "../../assets/VAISHALI JOSHI (1).pdf"
 import avatarImg from "../../assets/Home.png";
 import TextChange from "../TextChange";
 

@@ -1,4 +1,43 @@
-import React from 'react'
+import CertCard from "./CertCard";
+import Image1 from "../../assets/Cert/FullStack_Cert.png"
+import Image2 from "../../assets/Cert/Python2.jpg"
+import Image3 from "../../assets/Cert/Python1.jpg"
+import Image4 from "../../assets/Cert/Chatgpt.jpg"
+import Image5 from "../../assets/Cert/AI.jpg"
+import Image6 from "../../assets/Cert/Bootstrap.jpg"
+import Image7 from "../../assets/Cert/Javascript.jpg"
+import Image8 from "../../assets/Cert/React.jpg"
+import Image9 from "../../assets/Cert/Python2.jpg"
+import Image10 from "../../assets/Cert/Python2.jpg"
+
+const Certificates = () => {
+  return (
+    <div id="Certificates" className="h-full text-white pb-5">
+  
+    <h2 className='py-2 px-4 text-2xl mb-4 md:text-4xl font-bold text-center'>Certificates</h2>
+     <div className='flex flex-wrap gap-4 justify-center'>
+      <CertCard src={Image1}/>
+      <CertCard src={Image2}/>
+      <CertCard src={Image3}/>
+      <CertCard src={Image4}/>
+      <CertCard src={Image5}/>
+      <CertCard src={Image6}/>
+      <CertCard src={Image7}/>
+      <CertCard src={Image8}/>
+      <CertCard src={Image9}/>
+      <CertCard src={Image10}/>
+     </div>
+
+    </div>
+    
+    
+
+  
+  )
+}
+
+export default Certificates;
+/*import React from 'react'
 import Image1 from "../../assets/Cert/FullStack_Cert.png"
 import Image2 from "../../assets/Cert/Python2.jpg"
 import Image3 from "../../assets/Cert/Python1.jpg"
@@ -32,3 +71,4 @@ const Certificates = () => {
 }
 
 export default Certificates
+*/

@@ -25,6 +25,7 @@ const Projects = () => {
           main="A portfolio created using HTML , Tailwind CSS , Javascript and ReactJS."
           href="https://github.com/vjoshi29/Portfolio"
         />
+      
         <ProjectCard
          isrc={p3}
           title="News App"

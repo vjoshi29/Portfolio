@@ -1,13 +1,13 @@
 
 import { MdOutlineEmail } from "react-icons/md";
-import { CiLinkedin } from "react-icons/ci";
+import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <div
       id="Footer"
-      className="flex-row sm:flex  justify-around bg-[#465697] text-white p-10 md:p-12 items-center"
+      className="flex-row sm:flex  justify-around bg-[#465697] text-white p-5 md:p-12 items-center"
     >
       <div className="md:gap-4">
         <h1 className="text-2xl md:text-6xl font-bold">Contact</h1>
@@ -17,16 +17,18 @@ const Footer = () => {
       </div>
 
       <ul className="text-sm md:text-xl">
-        <li className="flex gap-1 items-center">
-          <MdOutlineEmail size={20} />
+        <li className="flex gap-2 items-center">
+
+          <MdOutlineEmail />
           vaishali291201@gmail.com
         </li>
-        <li className="flex gap-1 items-center">
-          <CiLinkedin size={20} />
+        <li className="flex gap-2 items-center">
+          <FaLinkedin />
           https://www.linkedin.com/in/vaishali-joshi123
         </li>
-        <li className="flex gap-1 items-center">
-          <FaGithub size={20} />
+        <li className="flex gap-2 items-center">
+
+          <FaGithub />
           https://github.com/vjoshi29
         </li>
       </ul>
