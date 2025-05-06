@@ -1,8 +1,9 @@
+_________________________________________________________________________________________________________
 **PORTFOLIO**
 _________________________________________________________________________________________________________
 _**Technologies** - HTML ,Tailwind CSS , Javascript and React._
 
-_My personal Portfolio showcasing my education background , skills, projects and certificates._
+My personal Portfolio showcasing my education background , skills, projects and certificates.
 _________________________________________________________________________________________________________
 **Desktop View**
 _________________________________________________________________________________________________________
