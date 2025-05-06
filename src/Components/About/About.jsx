@@ -1,41 +1,46 @@
-
 import AboutImg from "../../assets/About.png";
-import { IoArrowForward } from "react-icons/io5";
+
 const About = () => {
   return (
-    <div
+    <section
       id="About"
-      className="h-full text-white md:flex overflow-hidden items-center md:flex-wrap md:justify-center  p-4 sm:p-12"
+      className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 text-indigo-100 flex items-center justify-center px-4 py-10"
     >
-      <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700 sm:p-5 p-1 rounded-2xl">
-        <h2 className="py-2 px-4 text-2xl md:text-4xl font-bold ">About</h2>
-        <div className="md:flex flex-wrap flex-col lg:flex-row items-center">
-          <img className=" h:5/6  m-auto" src={AboutImg} alt="About img" />
+      <div className="max-w-6xl w-full bg-gray-900 rounded-3xl shadow-2xl  shadow-[0_8px_24px_rgba(99,102,241,0.35)]  p-6 sm:p-10 md:p-16 space-y-10 ">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center text-indigo-200 ">
+          About Me
+        </h2>
 
-          <ul>
-            <div className="flex gap-3 py-4">
-              <IoArrowForward  className="mt-1" />
+        <div className="flex flex-col lg:flex-row items-center gap-10">
+          {/* Image Section */}
+          <div className="flex-1 flex justify-center ">
+            <img
+              src={AboutImg}
+              alt="About"
+              className="w-full  max-w-xs sm:max-w-sm bg-slate-200 lg:max-w-md rounded-3xl shadow-lg shadow-[0_8px_24px_rgba(99,102,241,0.35)]  hover:scale-105 transition-transform duration-300"
+            />
+          </div>
 
-              <span className="w-full lg:w-96">
-                <p className="text-sm md:text-lg ">
-                I am a passionate and dedicated <strong>Full-Stack Web Developer </strong> with a strong foundation in both <strong>Front-End</strong> and <strong>Back-End</strong> technologies. Graduated with a degree in <strong>Computer Science</strong>, I am eager to apply my skills in real-world projects. I have hands-on experience with <strong>HTML, CSS, </strong> and <strong> JavaScript</strong> as well as frameworks like <strong>React and Node.js.</strong>
-                </p>
-              </span>
+          {/* Text Content */}
+          <div className="flex-1 space-y-6 text-base sm:text-lg leading-relaxed">
+            <div className="flex gap-3 items-start">
+                
+              <p>
+              I am a <strong>Computer Science</strong> graduate with certification in  <strong>Full Stack Development</strong> expertising in <strong>MERN Stack.</strong> Currently advancing my expertise through specialized training in <strong>Amazon Web Services (AWS). </strong> Skilled in building <strong> responsive</strong> web apps using<strong> HTML, CSS, JavaScript</strong> and frameworks like <strong>React</strong> and <strong>Node.js</strong>.
+              </p>
             </div>
-            <div className="flex gap-3 py-4">
-              <IoArrowForward className="mt-1" />
-
-              <span className="w-full lg:w-96">
-                <p className="text-sm md:text-lg">
-                Currently , I am looking for an <strong>Entry-Level</strong> position where I can contribute my technical skills and enthusiasm for <strong>Web Development</strong> while growing alongside a talented team.
-                </p>
-              </span>
+            <div className="flex gap-3 items-start">
+                
+              <p>
+              I aspire to build <strong> dynamic, scalable web solutions</strong>  by harnessing the power of modern <strong>Web Development</strong> and the limitless potential of <strong> AWS cloud technologies.</strong> 
+              </p>
             </div>
-          </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
 export default About;
+

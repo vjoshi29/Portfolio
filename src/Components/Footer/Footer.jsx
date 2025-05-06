@@ -1,39 +1,58 @@
-
 import { MdOutlineEmail } from "react-icons/md";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div
+    <footer
       id="Footer"
-      className="flex-row sm:flex  justify-around bg-[#465697] text-white p-5 md:p-12 items-center"
+      className="bg-gray-950 text-white px-6 py-12 flex justify-center items-center"
     >
-      <div className="md:gap-4">
-        <h1 className="text-2xl md:text-6xl font-bold">Contact</h1>
-        <h3 className="mb-2 text-sm md:text-2xl font-normal">
-          Feel Free To reach out!
-        </h3>
+      <div className="flex flex-col md:flex-row gap-10 md:gap-24 items-center text-center md:text-left">
+        {/* Left Side: Heading */}
+        <div>
+          <h1 className="text-3xl md:text-5xl font-bold text-indigo-400">Contact</h1>
+          <p className="text-sm md:text-xl mt-2 text-indigo-400">Feel free to reach out!</p>
+        </div>
+
+        {/* Right Side: Contact List */}
+        <ul className="space-y-4 text-sm md:text-lg text-gray-400">
+          <li className="flex items-center gap-2">
+            <MdOutlineEmail className="text-xl" />
+            <a
+              href="mailto:vaishali291201@gmail.com"
+              className="hover:underline break-all"
+            >
+              vaishali291201@gmail.com
+            </a>
+          </li>
+          <li className="flex items-center gap-2">
+            <FaLinkedin className="text-xl" />
+            <a
+              href="https://www.linkedin.com/in/vaishali-joshi123"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline break-all"
+            >
+              linkedin.com/in/vaishali-joshi123
+            </a>
+          </li>
+          <li className="flex items-center gap-2">
+            <FaGithub className="text-xl" />
+            <a
+              href="https://github.com/vjoshi29"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline break-all"
+            >
+              github.com/vjoshi29
+            </a>
+          </li>
+        </ul>
       </div>
-
-      <ul className="text-sm md:text-xl">
-        <li className="flex gap-2 items-center">
-
-          <MdOutlineEmail />
-          vaishali291201@gmail.com
-        </li>
-        <li className="flex gap-2 items-center">
-          <FaLinkedin />
-          https://www.linkedin.com/in/vaishali-joshi123
-        </li>
-        <li className="flex gap-2 items-center">
-
-          <FaGithub />
-          https://github.com/vjoshi29
-        </li>
-      </ul>
-    </div>
+    </footer>
   );
 };
 
 export default Footer;
+
+

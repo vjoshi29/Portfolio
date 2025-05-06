@@ -1,74 +1,48 @@
 import CertCard from "./CertCard";
-import Image1 from "../../assets/Cert/FullStack_Cert.png"
-import Image2 from "../../assets/Cert/Python2.jpg"
-import Image3 from "../../assets/Cert/Python1.jpg"
-import Image4 from "../../assets/Cert/Chatgpt.jpg"
-import Image5 from "../../assets/Cert/AI.jpg"
-import Image6 from "../../assets/Cert/Bootstrap.jpg"
-import Image7 from "../../assets/Cert/Javascript.jpg"
-import Image8 from "../../assets/Cert/React.jpg"
-import Image9 from "../../assets/Cert/Python2.jpg"
-import Image10 from "../../assets/Cert/Python2.jpg"
+import Image1 from "../../assets/Cert/FullStack_Cert.png";
+import Image2 from "../../assets/Cert/Python2.jpg";
+import Image3 from "../../assets/Cert/Python1.jpg";
+import Image4 from "../../assets/Cert/Chatgpt.jpg";
+import Image5 from "../../assets/Cert/AI.jpg";
+import Image6 from "../../assets/Cert/Bootstrap.jpg";
+import Image7 from "../../assets/Cert/Javascript.jpg";
+import Image8 from "../../assets/Cert/React.jpg";
 
 const Certificates = () => {
+  const certificates = [
+    { image: Image1, title: "Full Stack Development" },
+    { image: Image2, title: "Python - Advanced" },
+    { image: Image3, title: "Python - Basics" },
+    { image: Image4, title: "ChatGPT Integration" },
+    { image: Image5, title: "AI Foundations" },
+    { image: Image6, title: "Bootstrap Design" },
+    { image: Image7, title: "JavaScript Essentials" },
+    { image: Image8, title: "React Development" },
+  ];
+
   return (
-    <div id="Certificates" className="h-full text-white pb-5">
-  
-    <h2 className='py-2 px-4 text-2xl mb-4 md:text-4xl font-bold text-center'>Certificates</h2>
-     <div className='flex flex-wrap gap-4 justify-center'>
-      <CertCard src={Image1}/>
-      <CertCard src={Image2}/>
-      <CertCard src={Image3}/>
-      <CertCard src={Image4}/>
-      <CertCard src={Image5}/>
-      <CertCard src={Image6}/>
-      <CertCard src={Image7}/>
-      <CertCard src={Image8}/>
-      <CertCard src={Image9}/>
-      <CertCard src={Image10}/>
-     </div>
+    <section
+      id="Certificates"
+      className="min-h-screen bg-gradient-to-r from-slate-950 via-slate-900 to-slate-800 py-10 px-4"
+    >
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center text-purple-100 mb-12">
+          Certificates
+        </h2>
 
-    </div>
-    
-    
-
-  
-  )
-}
+        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+          {certificates.map((cert, index) => (
+            <div
+              key={index}
+              className="break-inside-avoid transition duration-300 transform hover:scale-[1.03]"
+            >
+              <CertCard image={cert.image} title={cert.title} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default Certificates;
-/*import React from 'react'
-import Image1 from "../../assets/Cert/FullStack_Cert.png"
-import Image2 from "../../assets/Cert/Python2.jpg"
-import Image3 from "../../assets/Cert/Python1.jpg"
-import Image4 from "../../assets/Cert/Chatgpt.jpg"
-import Image5 from "../../assets/Cert/AI.jpg"
-import Image6 from "../../assets/Cert/Bootstrap.jpg"
-import Image7 from "../../assets/Cert/Javascript.jpg"
-import Image8 from "../../assets/Cert/React.jpg"
-import Image9 from "../../assets/Cert/Python2.jpg"
-import Image10 from "../../assets/Cert/Python2.jpg"
-
-const Certificates = () => {
-  return (
-   <div id="Certificates" className="h-full text-white pb-5">
-    <h2 className='py-2 px-4 text-2xl mb-4 md:text-4xl font-bold text-center'>Certificates</h2>
-    <div className='flex flex-wrap gap-4 justify-center'>
-   
-      <img src={Image1} className="w-3/4 h-3/4 sm:w-1/4 sm:h-1/4 hover:border-gray-200 hover:border-solid hover:border-2" />
-      <img src={Image2} className="w-3/4 h-3/4 sm:w-1/4 sm:h-1/4  hover:border-gray-200 hover:border-solid hover:border-2" />
-      <img src={Image3} className="w-3/4 h-3/4 sm:w-1/4 sm:h-1/4  hover:border-zinc-200 hover:border-solid hover:border-2" />
-      <img src={Image4} className="w-3/4 h-3/4 sm:w-1/4 sm:h-1/4  hover:border-zinc-200 hover:border-solid hover:border-2" />
-      <img src={Image5} className="w-3/4 h-3/4 sm:w-1/4 sm:h-1/4  hover:border-zinc-200 hover:border-solid hover:border-2" />
-      <img src={Image6} className="w-3/4 h-3/4 sm:w-1/4 sm:h-1/4  hover:border-zinc-200 hover:border-solid hover:border-2" />
-      <img src={Image7} className="w-3/4 h-3/4 sm:w-1/4 sm:h-1/4  hover:border-zinc-200 hover:border-solid hover:border-2" />
-      <img src={Image8} className="w-3/4 h-3/4 sm:w-1/4 sm:h-1/4  hover:border-zinc-200 hover:border-solid hover:border-2" />
-      <img src={Image9} className="w-3/4 h-3/4 sm:w-1/4 sm:h-1/4  hover:border-zinc-200 hover:border-solid hover:border-2" />
-      <img src={Image10} className="w-3/4 h-3/4 sm:w-1/4 sm:h-1/4 hover:border-zinc-200 hover:border-solid hover:border-2" />
-    </div>
-  </div>
-  )
-}
-
-export default Certificates
-*/

@@ -1,11 +1,14 @@
-const CertCard = ( {src} ) => {
-    return (          
-<>
-    <img src={src} className="w-3/4 h-3/4 sm:w-1/4 sm:h-1/4 hover:border-gray-200 hover:border-solid hover:border-2" />
-</>
-        
-    );
-  };
-  
-  export default CertCard;
+const CertCard = ({ image, title }) => {
+  return (
+    <div className="bg-white rounded-xl overflow-hidden shadow-md">
+      <img src={image} alt={title} className="w-full object-cover" />
+      <div className="p-4  bg-slate-300 ">
+        <h3 className="text-lg font-semibold text-gray-950 text-center">{title}</h3>
+      </div>
+    </div>
+  );
+};
+
+export default CertCard;
+
   
