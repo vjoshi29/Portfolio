@@ -1,9 +1,14 @@
 _________________________________________________________________________________________________________
 **PORTFOLIO**
-_________________________________________________________________________________________________________
-_**Technologies** - HTML ,Tailwind CSS , Javascript and React._
 
-My personal Portfolio showcasing my education background , skills, projects and certificates.
+_My personal Portfolio showcasing my education background, skills, projects and certificates._
+_________________________________________________________________________________________________________
+**Technologies-**  
+
+_**1)Frontend:-**_ HTML ,Tailwind CSS , Javascript and React.
+
+_**2)Deployment-**_ Amazon EC2 , Domain:- codewithvaishu.xyz , SSL Certificate using Certbot
+
 _________________________________________________________________________________________________________
 **Desktop View**
 _________________________________________________________________________________________________________
@@ -32,6 +37,20 @@ ________________________________________________________________________________
 
 ![Screenshot (98)](https://github.com/user-attachments/assets/e3b64df9-e129-4b25-8229-c23568a79b61)
 
+_________________________________________________________________________________________________________
+**Domain Added**   
+
+_(codewithvaishu.xyz)_
+_________________________________________________________________________________________________________
+![Screenshot (109)](https://github.com/user-attachments/assets/9e4fa994-d5a9-4eee-8558-0c1c34b2802b)
+_________________________________________________________________________________________________________
+
+**SSL Certificate Added** 
+
+_Now the website is running securely in HTTPS_
+_________________________________________________________________________________________________________
+![Screenshot (110)](https://github.com/user-attachments/assets/104baaed-47cc-46ed-bacf-cebb60e8251b)
+_________________________________________________________________________________________________________
 
 
 
